@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio con JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper bg-white">
+        <div class="h2 text-center">Codice Fiscale</div>
+        <div class="h4 text-muted text-center pt-2">Inserisci i dati</div>
+        <form class="pt-3">
+            <div class="form-group py-2">
+                <div class="input-field">
+                    <input type="text" placeholder="Nome" required class="" id="nome" name="nome">
+                </div>
+            </div>
+            <div class="form-group py-1 pb-2">
+                <div class="input-field">
+                    <input type="text" placeholder="Cognome" required class="" id="cognome" name="cognome">
+                </div>
+            </div>
+            <div class="form-group py-1 pb-2">
+                <div class="input-field">
+                    <input type="date" placeholder="Data" required class="" id="data" name="data">
+                </div>
+            </div>
+            <div class="form-group py-1 pb-2">
+                <div class="mb-3">
+                    <label for="citta" class="form-label">Città</label>
+                    <select required name="citta" id="citta" class="form-control">
+                        <option></option>
+                    </select>
+                </div>
+            </div>
+            <fieldset class="row mb-3" id="genere">
+                <legend class="col-form-label col-sm-2 pt-0">Genere</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genere" id="F" value="F">
+                        <label class="form-check-label" for="F">
+                            F
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="genere" id="M" value="M">
+                        <label class="form-check-label" for="M">
+                            M
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="button" onclick="showCode()" class="btn bottone">Calcola</button>
+            <div class="row">
+                <div class="col-6">Codice Fiscale</div>
+                <p class="col-6" id="codicefiscale"></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/codice_fiscale.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
